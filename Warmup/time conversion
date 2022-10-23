@@ -1,1 +1,36 @@
+#include <assert.h>
+#include <ctype.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char t[10];
+    scanf("%s",t);
+    if(t[8]=='P')
+    {
+        if(t[0]!='1'||t[1]!='2')
+        {
+            t[0]++;
+            t[1]=t[1]+2;
+        }
+    }
+    else
+    {
+    if(t[0]=='1'&&t[1]=='2')
+    {
+        t[0]='0';
+        t[1]='0';
+    }
+    }
+    t[8]='\0';
+    printf("%s",t);
+    return 0;
+}
 
