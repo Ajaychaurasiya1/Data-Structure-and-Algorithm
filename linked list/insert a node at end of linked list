@@ -1,1 +1,16 @@
 
+void insertAtEnd(node* &first, string name) {
+    // create node
+    node* temp = new node;
+    temp->data = name;
+    temp->next = NULL;
+
+    if(!first) { // empty list becomes the new node
+        first = temp;
+        return;
+    } else { // find last and link the new node
+        node* last = first;
+        while(last->next) last=last->next;
+        last->next = temp;
+    }
+}
