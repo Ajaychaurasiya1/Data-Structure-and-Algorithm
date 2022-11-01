@@ -1,1 +1,8 @@
-
+void printlinkedlist(singlylinkedlistisnode*head)
+{
+while(head!=NULL)
+{
+cout<<head->data>>endl;
+head=head->next;
+}
+}
