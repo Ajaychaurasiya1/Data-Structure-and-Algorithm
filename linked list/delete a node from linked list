@@ -1,1 +1,18 @@
 
+void deleteNode(struct node **head, int key)
+{
+      //temp is used to freeing the memory
+      struct node *temp;
+     
+
+      //key found on the head node.
+      //move to head node to the next and free the head.
+      if(*head->data == key)
+      {
+          temp = *head;    //backup the head to free its memory
+          *head = (*head)->next;
+          free(temp);
+      }
+    
+
+}
