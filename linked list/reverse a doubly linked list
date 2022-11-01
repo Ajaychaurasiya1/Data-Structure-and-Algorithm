@@ -1,1 +1,13 @@
 
+class NodeStructure_DLL {
+  public:
+    int data;
+  Node * next; // ptr to nxt node in node in DLL
+  Node * prev; // prev Node in DLL
+
+  Node(int d) {
+    data = d;
+    next = prev = null;
+  }
+
+};
